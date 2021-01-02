@@ -1,0 +1,205 @@
+<html>
+<head>
+<title>Skills</title>
+<meta charset="utf-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		font-family: Century Schoolbook;
+		background-image:url(b1.jpg);
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		background-attachment:fixed;
+		
+	}
+	/*style the header*/
+	header {
+		
+		padding: 0px;
+		text-align: center;
+		
+	}
+	/*Container for flexboxes*/
+	section {
+		display: -webkit-flex;
+		display: flex;
+	}
+	/*style the navigation menu*/
+	nav {
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+		background-color: #838e9a;
+		font-family:Tekton Pro;
+				
+	}
+	/*style the list inside the menu*/
+	nav ul {
+		list-style-type: none;
+		padding: 0px;
+		margin:0;
+		width:100%;
+		height:100%;
+		border:1px solid #555;	
+	}
+
+	li a {
+		  display: block;
+  		  color: #000;
+  		  padding: 15px;
+  		  text-decoration: none;
+        }
+
+	li {
+  		text-align: center;
+  		border-bottom: 1px solid #555;
+	}
+
+	li:last-child {
+  		border-bottom: none;
+	}
+
+	li a.active {
+  		background-color: #4CAF50;
+ 		 color: white;
+	}
+
+	li a:hover:not(.active) {
+ 	 	background-color: #555;
+  		color: white;
+	}
+	
+	article {
+		-webkit-flex: 3;
+		-ms-flex: 3;
+		flex: 3;
+		background-color: #bbc9d3;
+		padding: 20px;
+	}
+
+	#table, th{
+  		text-align: left;
+		border:1px solid black;
+		border-collapse:collapse;
+		padding:0px;
+	}
+
+	#table td{
+		text-align: left;
+		border:1px solid black;
+		border-collapse:collapse;
+		padding:15px;
+
+	}
+
+	#ul li{
+		border-style:none;
+	}	
+
+	/*style the footer*/
+	footer {
+		background-color: #5d5c63;
+		padding: 20px;
+		text-align: center;
+		color: white;
+	}                                                                            
+	/*Responsive layout - makes the menu and the content  (inside the section) sit on top of each other instead of next to each other*/
+	@media (max-width: 600px) {
+		section {
+			-webkit-flex-direction: column;
+			flex-direction: column;
+		}
+	}
+</style>
+</head>
+
+<body>
+<table width ="60%" border="3px" align="center">
+<tr>
+<td colspan="2" align="center">
+<!-- Header Section -->
+<header>
+	<img src = "header.jpg" width="100%" alt = "vi"> 
+</header>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+
+<section>
+<!-- Navigation Section -->	
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="education.html">Education Background</a></li>
+			<li><a href="skills.html">Skills</a></li> 
+			<li><a href="award.html">Awards</a></li> 
+			<li><a href="contactme.html">Contacts</a></li> 
+			<li></li>
+			
+		</ul>
+	</nav>
+<!-- Experience Section -->
+	<article>
+		<h1 style = "text-align:center ; font-family:Cooper Black; font-size:25px; background-color:#6C5B7B;">Work Experience </h1>
+		<p><b><u> 27 November 2017 – 13 April 2018 </u></b></p>
+		<p style = text-align:justify;> Industrial Training at Jabatan Pertanian Bahagian Miri for 5 months to complete the conditions required by Politeknik Kuching for the award of Certificate of Diploma.</p>	
+
+		<p><b><u> 2018-2019 </u></b></p>
+		<p style = text-align:justify;> Works at Your Eyes Miri as a sales person. I learned a lot here because I learn how to make the spectacles and gain more knowledge about the good quality of spectacles and lenses. </p>
+
+		<p><b><u> 2019-2020</u></b></p>
+		<p style = text-align:justify;> I work as a tearista at Utea Senadin Miri. Here, I have learned a lot of things especially how to make a boba and how to make the drinks. Not only that, I have learned different position other than tearista such as kitchen helper and customer service. </p> <br>
+
+<!--Language Section -->
+		<h1 style = "text-align:center ; font-family:Cooper Black; font-size:25px; background-color:#6C5B7B;">Language </h1>
+		<table id ="table" align="center">
+		<tr>
+			<th style = text-align:center;>Language</th>
+			<th style = text-align:center;>Spoken</th>
+			<th style = text-align:center;>Written</th>
+			<th style = text-align:center;>Relevant Certificate</th>
+		</tr>
+		<tr>
+			<td>English</td>
+			<td>Average</td>
+			<td>Average</td>
+			<td>MUET(Band 3) </td>
+		</tr>
+		<tr>
+			<td>Bahasa Malaysia</td>
+			<td>Excellent</td>
+			<td>Excellent</td>
+			<td>-</td>
+		</tr>
+		</table>
+		<br>
+
+<!-- Skills Section -->
+		<h1 style = "text-align:center ; font-family:Cooper Black; font-size:25px; background-color:#6C5B7B;">Skills </h1>
+		<ul id="ul">
+	
+			<li style = text-align:left;> Excellent in using Microsoft Word, Power Point and Excel. </li>
+			
+			<li style = text-align:left;> Experienced in using Adobe Flash and Adobe Audition. </li>
+			<li style = text-align:left;>Know how to use Adobe Premiere Pro and Adobe Photoshop. </li>
+			<li style = text-align:left;>Have a basic knowledge in using PHP and MySQL. </li>
+			<li style = text-align:left;>I am able to communicate and interact well with other people. </li>
+			<li style = text-align:left;>I am responsible person and love to learn a new thing. </li> 
+		</ul>
+	
+	</article>
+</section>
+
+<!-- Footer -->
+<footer>
+	<p>Copyright ©  2020 Viviana</p>
+	<p>This page is for IMS456 Personal Website Individual Assignment purpose only</p>
+	<p>Recommended Browser Goggle Chrome Resolution 1366x768</p>
+	<p>Last Updated 2 January 2021 </p>
+</footer>
+</body>
+</html>

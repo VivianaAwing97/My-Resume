@@ -1,0 +1,197 @@
+<html>
+<head>
+<title>My Resume</title>
+<meta charset="utf-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		font-family: Century Schoolbook;
+		background-image:url(b1.jpg);
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		background-attachment:fixed;
+	
+	}
+
+	/*style the header*/
+	header {
+		padding: 0px;
+		text-align: center;
+				
+	}
+	
+	/*Container for flexboxes*/
+	section {
+		display: -webkit-flex;
+		display: flex;
+		
+	}
+	/*style the navigation menu*/
+	nav {
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+		background-color: #838e9a;
+		font-family:Tekton Pro;
+		
+	}
+	/*style the list inside the menu*/
+	nav ul {
+		list-style-type: none;
+		padding: 0;
+		margin:0;
+		width:100%;
+		height:100%;
+		border:1px solid #555;	
+	}
+
+	li a {
+		  display: block;
+  		  color: #000;
+  		  padding: 15px;
+  		  text-decoration: none;
+        }
+
+	li {
+  		text-align: center;
+  		border-bottom: 1px solid #555;
+	}
+
+	li:last-child {
+  		border-bottom: none;
+	}
+
+	li a.active {
+  		background-color: #4CAF50;
+ 		 color: white;
+	}
+
+	li a:hover:not(.active) {
+ 	 	background-color: #555;
+  		color: white;
+	}
+	
+	article {
+		-webkit-flex: 3;
+		-ms-flex: 3;
+		flex: 3;
+		background-color: #bbc9d3;
+		padding: 20px;
+	}
+
+	#table, th{
+  		text-align: left;
+		border:1px solid black;
+		border-collapse:collapse;
+		padding:0px;
+	}
+
+	#table td{
+		text-align: left;
+		border:1px solid black;
+		border-collapse:collapse;
+		padding:15px;
+
+	}
+	/*style the footer*/
+	footer {
+		background-color: #5d5c63;
+		padding: 20px;
+		text-align: center;
+		color: white;
+	}
+	/*Responsive layout - makes the menu and the content  (inside the section) sit on top of each other instead of next to each other*/
+	@media (max-width: 600px) {
+		section {
+			-webkit-flex-direction: column;
+			flex-direction: column;
+		}
+	}
+</style>
+</head>
+
+<body>
+<table width ="60%" border="3px" align="center">
+<tr>
+<td colspan="2" align="center">
+
+<!-- Header Section -->
+<header>
+	<img src = "header.jpg" width="100%" alt = "vi"> 
+</header>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+
+<section>
+<!-- Navigation Section -->	
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="education.html">Education Background</a></li>
+			<li><a href="skills.html">Skills</a></li> 
+			<li><a href="award.html">Awards</a></li> 
+			<li><a href="contactme.html">Contacts</a></li> 
+			<li></li>
+			
+		</ul>
+	</nav>
+<!-- Personal Detail Section -->
+	<article>
+		<h1 style = "text-align:center ; font-family:Cooper Black; font-size:22px; background-color:#314552;">Personal Details </h1>
+		<table id ="table" align="center">
+		<tr>
+			<th><b>NAME</b></th>
+			<td>VIVIANA AWING EPOI</td>
+		</tr>
+		<tr>
+			<th><b>AGE</b></th>
+			<td>23 YEARS OLD</td>
+		</tr>
+		<tr>
+			<th><b>GENDER</b></th>
+			<td>FEMALE</td>
+		</tr>
+		<tr>
+			<th><b>DATE OF BIRTH</b></th>
+			<td>31 OCTOBER 1997</td>
+		</tr>
+		<tr>
+			<th><b>RACE</b></th>
+			<td>KENYAH & MELANAU </td>
+		</tr>
+		<tr>
+			<th><b>RELIGION</b></th>
+			<td>CHRISTIAN</td>
+		</tr>
+		<tr>
+			<th><b>MARTIAL STATUS</b></th>
+			<td>SINGLE</td>
+		</tr>
+		</table>
+		<br>
+		<center><img src = "viviana.jpg" style="width:300; height:400; border-radius:10%"; alt="vivi"></center>
+		<br><br><br>
+		
+<!-- Objective section -->
+			<h1 style = "text-align:center ; font-family:Cooper Black; font-size:22px; background-color:#314552;">Objectives</h1>
+		<p style = text-align:justify;> To get experience and improve useful knowledge through communication skills, problem solving skills and other skills. Also, to build self-confidence and motivation to achieve the characteristics of an ideal worker and contribute success for the organization. </p>
+		<br><br>
+		<center><button onclick="document.location='aboutme.html'"style="background-color:maroon; color:white; font-size:18px;"> About Me </button></center>
+
+
+	</article>
+</section>
+<!-- Footer -->
+<footer>
+	<p>Copyright ©  2020 Viviana</p>
+	<p>This page is for IMS456 Personal Website Individual Assignment purpose only</p>
+	<p>Recommended Browser Goggle Chrome Resolution 1366x768</p>
+	<p>Last Updated 2 January 2021 </p>
+</footer>
+</body>
+</html>
